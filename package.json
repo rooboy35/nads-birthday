@@ -1,0 +1,8 @@
+{
+  "name": "nads-birthday",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node scripts/build.mjs", "check": "node --check src/app.js && node scripts/check.mjs", "preview": "node scripts/preview.mjs" },
+  "engines": { "node": ">=20" }
+}
