@@ -1,0 +1,34 @@
+{
+  "url": "https://cheery-salamander-a64a94.netlify.app/",
+  "qr_designator": "6-H",
+  "error_correction": "H",
+  "quiet_zone_modules": 4,
+  "files": [
+    {
+      "name": "nads-qr-code.png",
+      "bytes": 84875
+    },
+    {
+      "name": "nads-qr-code.svg",
+      "bytes": 76735
+    },
+    {
+      "name": "nads-birthday-qr.png",
+      "bytes": 118979
+    },
+    {
+      "name": "nads-birthday-qr.svg",
+      "bytes": 81078
+    }
+  ],
+  "checks": {
+    "code-full": "decoded exact URL",
+    "poster-full": "decoded exact URL",
+    "poster-800px": "decoded exact URL",
+    "poster-480px": "decoded exact URL",
+    "poster-320px": "decoded exact URL",
+    "poster-grayscale": "decoded exact URL",
+    "poster-rotated-12deg": "decoded exact URL",
+    "poster-light-blur": "decoded exact URL"
+  }
+}

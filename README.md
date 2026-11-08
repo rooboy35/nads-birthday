@@ -18,6 +18,8 @@ Open http://127.0.0.1:4440. Preview stops automatically after an hour; Ctrl+C st
 
 Existing project: `cheery-salamander-a64a94`.
 
+Live birthday website: https://cheery-salamander-a64a94.netlify.app/
+
 `netlify.toml` sets `npm run build` and the `dist` publish directory. Link this GitHub repository to that **existing** project for continuous deployment, or build locally and drag a ZIP containing the contents of `dist/` onto the existing project’s Deploys screen. `index.html` must be at the ZIP root. Do not create another site or upload the repository root.
 
 For an already authenticated Netlify CLI:
@@ -43,3 +45,9 @@ Reduced-motion preferences disable movement and confetti, preserving readable sc
 ## Acceptance checks
 
 `npm run check` verifies JS syntax, content uniqueness, full-deck rotation and required local images. Browser QA should cover all six main controls (three image hit targets and three standalone controls), crying → beer → roast transitions, repeated and rapid interactions, mute/reset, keyboard focus, sharing, phone widths, reduced motion and console/network errors. See `QA.md` for the actual results recorded for this delivery.
+
+## Nads QR code
+
+Ready-to-share files are in `artifacts/qr/`: `nads-birthday-qr.png` and `.svg` include the cap-and-beard birthday frame; `nads-qr-code.png` and `.svg` contain just the code and Nads’ portrait. They link directly to the live website, with no tracking or redirect service. Full-size and reduced/rotated PNG decoding is recorded in `verification.json`.
+
+Optional regeneration on this Mac: install `scripts/requirements-qr.txt` in a Python environment, then run `python scripts/make-qr.py`. These authoring dependencies are separate from the website. The SVGs include the portrait and QR geometry locally; their typography uses Impact with system fallbacks.

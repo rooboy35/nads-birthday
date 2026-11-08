@@ -23,4 +23,12 @@ Tested in the owner’s Chrome browser against the locally built site on port 44
 
 OS-level reduced-motion emulation, physical Safari playback and subjective loudspeaker audio quality were not separately tested. Native share/clipboard permissions vary by browser; a visible copy-link fallback is provided.
 
-Deployment acceptance is recorded separately after the existing Netlify project is replaced and its public URL verified.
+## Deployment acceptance
+
+Replaced the existing `cheery-salamander-a64a94` Netlify project using the tested static ZIP. Netlify recorded deployment `6aefe480c1924d5ba0dbb974`, published on 8 November 2026 at 10:55 WITA. Then enabled the requested public audience; Netlify confirmed “Your project is public” and “Anyone can visit your production site.”
+
+Verified `https://cheery-salamander-a64a94.netlify.app/` shows the replacement title, artwork and all new content. Invoked all three artwork buttons on the deployed page; each counter incremented to one, the final state was Roast, and no error-level browser console entries were reported. Source was integrated through GitHub PR #1, main commit `24f8b81`.
+
+## QR artifact
+
+`artifacts/qr/` contains a birthday card and a standalone QR, each in PNG and SVG. The destination is the exact public URL above, with high error correction and a four-module quiet zone. Nads’ actual portrait is embedded; the cap and beard frame stay outside the QR’s quiet zone. The final PNG files were decoded using ZXing-C++, including 320px-wide, grayscale, 12-degree rotation and light-blur checks. See `artifacts/qr/verification.json`.
